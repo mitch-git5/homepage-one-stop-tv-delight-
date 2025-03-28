@@ -16,6 +16,15 @@ nav li {
   flex: 1;
   text-align: center;
   position: relative;
+  border: 1px solid #0f0; /* add a green border around the dropdown list title */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4d4d4d; /* add a light gray background color to the dropdown list title */
+}
+
+nav li:hover {
+  background-color: #000000; /* change the background color to dark gray on hover */
+  border-color: #0f0; /* keep the green border color on hover */
 }
 
 nav a {
@@ -24,11 +33,6 @@ nav a {
   font-size: 24px;
   padding: 10px 0;
   display: block;
-}
-
-nav a:hover {
-  color: #f00; /* red */
-  background-color: #444;
 }
 
 nav .dropdown-toggle {
@@ -55,46 +59,43 @@ nav .dropdown-menu a {
   font-size: 18px;
   padding: 5px 10px;
   display: block;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-nav .dropdown-menu a:hover {
-  color: #f00; /* red */
-  background-color: #444;
-}
-
-nav li:hover .dropdown-menu {
-  display: block;
-}
-
-nav li:focus .dropdown-menu {
-  display: block;
-}
-
-nav li:focus + li .dropdown-menu {
-  display: none;
-}
-
-nav li:focus + li + li .dropdown-menu {
-  display: none;
-}
-
-nav .dropdown-toggle i {
-  font-size: 24px;
-  margin-left: 10px;
-}
-
-nav .dropdown-toggle i {
-  font-size: 24px;
-  margin-left: 10px;
+nav .dropdown-menu a {
   color: #0f0; /* green */
 }
 
-nav .dropdown-toggle i:hover {
-  color: #f00; /* red */
+nav li .dropdown-menu.open {
+  display: block;
 }
 
-nav .dropdown-toggle i:focus {
-  color: #f00; /* red */
+nav .dropdown-toggle .arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+nav .dropdown-toggle .arrow.open {
+  transform: rotate(90deg);
+}
+
+.dropdown-list {
+  display: none;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-toggle .arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-toggle .arrow.open {
+  transform: rotate(90deg);
+}
+
+.dropdown-list.open {
+  display: block;
 }
 
 .image-gallery.ai-style-change-1 a:active {
@@ -176,4 +177,44 @@ body {
     height: 100vh;
     margin: 0;
   font-family: Arial, sans-serif; 
+}
+
+.dropdown-list {
+  display: none;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-toggle .arrow {
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-toggle .arrow.open {
+  transform: rotate(90deg);
+}
+
+.dropdown-list.open {
+  display: block;
+}
+
+nav .dropdown-menu a.active {
+  background-color: #6e6e6e; /* dark gray */
+  color: #790e0e; /* red */
+}
+
+nav .dropdown-menu a:hover {
+  background-color: #6e6e6e; /* dark gray */
+  color: #790e0e; /* white */
+}
+
+nav .dropdown-menu a:active {
+  background-color: #444; /* dark gray */
+  color: #790e0e; /* white */
+}
+
+nav .dropdown-menu a:focus {
+  background-color: #6e6e6e; /* dark gray */
+  color: #790e0e; /* white */
 }
