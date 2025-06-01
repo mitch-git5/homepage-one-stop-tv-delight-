@@ -29,10 +29,17 @@ body {
 
 /* Adjust layout for mobile (portrait) */
 @media (max-width: 767px) {
-  .container {
+  .image-gallery {
     max-width: 100%;
     margin: 10px auto;
     padding: 5px;
+  }
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+   h1 {
+   font-size: 24px; /* adjust this value to your liking */
   }
 }
 
