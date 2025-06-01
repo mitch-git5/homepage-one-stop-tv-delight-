@@ -30,9 +30,12 @@ body {
 /* Adjust layout for mobile (portrait) */
 @media (max-width: 767px) {
   .image-gallery {
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 5px;
+    grid-template-columns: repeat(1, 100%); /* adjust the width of the gallery for mobile devices */
+    height: 200px; /* adjust the height of the gallery for mobile devices */
+  }
+  .image-gallery a img {
+    width: 100%; /* adjust the width of the images for mobile devices */
+    height: 150px; /* adjust the height of the images for mobile devices */
   }
   .image-gallery img {
     width: 100%;
@@ -54,5 +57,8 @@ body {
     max-width: 100%;
     margin: 10px auto;
     padding: 5px;
+  }
+   h1 {
+   font-size: 10px; /* adjust this value to your liking */
   }
 }
