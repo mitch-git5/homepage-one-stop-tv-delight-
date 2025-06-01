@@ -39,7 +39,12 @@ body {
     height: auto;
   }
    h1 {
-   font-size: 24px; /* adjust this value to your liking */
+   font-size: 10px; /* adjust this value to your liking */
+  }
+  .container {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 5px;
   }
 }
 
