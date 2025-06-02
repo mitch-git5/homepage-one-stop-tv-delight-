@@ -36,8 +36,6 @@ body {
   }
   h1 {
     font-size: 2.5em; /* adjust this value to your liking */
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.2; /* adjust this value to your liking */
   }
   footer {
     position: fixed;
