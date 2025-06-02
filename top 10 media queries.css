@@ -1,0 +1,31 @@
+/* Add new media queries below existing ones */
+
+/* Desktop (landscape) */
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+  /* styles for desktop landscape */
+}
+
+/* Desktop (portrait) */
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: portrait) {
+  /* styles for desktop portrait */
+}
+
+/* Tablet (landscape) */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  /* styles for tablet landscape */
+}
+
+/* Tablet (portrait) */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  /* styles for tablet portrait */
+}
+
+/* Mobile phone (landscape) */
+@media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+  /* styles for mobile phone landscape */
+}
+
+/* Mobile phone (portrait) */
+@media (min-width: 320px) and (max-width: 479px) and (orientation: portrait) {
+  /* styles for mobile phone portrait */
+}
