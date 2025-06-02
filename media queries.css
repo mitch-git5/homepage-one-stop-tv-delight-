@@ -36,7 +36,6 @@ body {
   }
   h1 {
     font-size: 0,5em; /* adjust this value to your liking */
-    font-family: 'Open Sans', sans-serif;
   }
   footer {
     position: fixed;
@@ -69,7 +68,6 @@ body {
   }
   h1 {
     font-size: 1em; /* adjust this value to your liking */
-    font-family: 'Open Sans', sans-serif;
   }
   footer {
     position: fixed;
