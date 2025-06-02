@@ -35,7 +35,7 @@ body {
     height: auto;
   }
   h1 {
-    font-size: 5px; /* adjust this value to your liking */
+    font-size: 10px; /* adjust this value to your liking */
   }
   footer {
     position: fixed;
@@ -60,14 +60,14 @@ body {
   }
   .image-gallery a img {
     width: 100%; /* adjust the width of the images for mobile devices */
-    height: 200px; /* adjust the height of the images for mobile devices */
+    height: 150px; /* adjust the height of the images for mobile devices */
   }
   .image-gallery img {
     width: 100%;
     height: auto;
   }
   h1 {
-    font-size: 20px; /* adjust this value to your liking */
+    font-size: 15px; /* adjust this value to your liking */
   }
   footer {
     position: fixed;
