@@ -1,0 +1,149 @@
+/* Default styles for desktop */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Mobile-first approach */
+
+/* Mobile phone (portrait) */
+@media (max-width: 479px) {
+  .image-gallery {
+    grid-template-columns: repeat(1, 100%); /* adjust the width of the gallery for mobile devices */
+    height: 200px; /* adjust the height of the gallery for mobile devices */
+  }
+  .image-gallery a img {
+    width: 100%; /* adjust the width of the images for mobile devices */
+    height: 150px; /* adjust the height of the images for mobile devices */
+  }
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2.5em; /* adjust this value to your liking */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2; /* adjust this value to your liking */
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+  }
+}
+
+/* Mobile phone (landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 50%); /* adjust the width of the gallery for mobile devices */
+    height: 300px; /* adjust the height of the gallery for mobile devices */
+  }
+  .image-gallery a img {
+    width: 100%; /* adjust the width of the images for mobile devices */
+    height: 200px; /* adjust the height of the images for mobile devices */
+  }
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2.5em; /* adjust this value to your liking */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2; /* adjust this value to your liking */
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+  }
+}
+
+/* Tablet (portrait) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .image-gallery {
+    grid-template-columns: repeat(3, 33.33%); /* adjust the width of the gallery for tablet devices */
+    height: 400px; /* adjust the height of the gallery for tablet devices */
+  }
+  .image-gallery a img {
+    width: 100%; /* adjust the width of the images for tablet devices */
+    height: 250px; /* adjust the height of the images for tablet devices */
+  }
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 3em; /* adjust this value to your liking */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2; /* adjust this value to your liking */
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* Tablet (landscape) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+  .image-gallery {
+    grid-template-columns: repeat(4, 25%); /* adjust the width of the gallery for tablet landscape devices */
+    height: 500px; /* adjust the height of the gallery for tablet landscape devices */
+  }
+  .image-gallery a img {
+    width: 100%; /* adjust the width of the images for tablet landscape devices */
+    height: 300px; /* adjust the height of the images for tablet landscape devices */
+  }
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 3.5em; /* adjust this value to your liking */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2; /* adjust this value to your liking */
+   }
+}
