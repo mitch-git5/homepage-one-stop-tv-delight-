@@ -159,9 +159,12 @@ footer {
   left: 250px;
 }
 
-.title {
-  font-size: 18px;
-  color: #fff;
+.title h1 {
+  font-size: 30px;
+  color: #00698f;
+  font-weight: bold;
+  text-decoration: underline #3b0c86;
+  text-shadow: 2px 2px 4px #3b0c86;
   text-align: center;
   margin: 0 auto;
 }
@@ -294,4 +297,12 @@ p {
 
 p {
   padding-bottom: 20px;
+}
+
+.banner-container .title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }

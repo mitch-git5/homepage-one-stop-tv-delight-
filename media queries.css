@@ -18,97 +18,35 @@ body {
   padding: 20px;
 }
 
-/* Mobile-first approach */
-
-/* Mobile phone (portrait) */
-@media (max-width: 479px) {
-  .image-gallery {
-    grid-template-columns: repeat(1, 100%); /* adjust the width of the gallery for mobile devices */
-    height: 200px; /* adjust the height of the gallery for mobile devices */
-  }
-  .image-gallery a img {
-    width: 100%; /* adjust the width of the images for mobile devices */
-    height: 150px; /* adjust the height of the images for mobile devices */
-  }
-  .image-gallery img {
-    width: 100%;
-    height: auto;
-  }
-  h1 {
-    font-size: 10px; /* adjust this value to your liking */
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    text-align: center;
-  }
-  .container {
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 5px;
-  }
-}
-
-/* Mobile phone (landscape) */
-@media (min-width: 480px) and (max-width: 767px) {
-  .image-gallery {
-    grid-template-columns: repeat(1, 100%); /* adjust the width of the gallery for mobile devices */
-    height: 200px; /* adjust the height of the gallery for mobile devices */
-  }
-  .image-gallery a img {
-    width: 100%; /* adjust the width of the images for mobile devices */
-    height: 150px; /* adjust the height of the images for mobile devices */
-  }
-  .image-gallery img {
-    width: 100%;
-    height: auto;
-  }
-  h1 {
-    font-size: 15px; /* adjust this value to your liking */
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    text-align: center;
-  }
-  .container {
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 5px;
-  }
-}
-
-/* Tablet (portrait) */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Adjust layout for tablet */
+@media (max-width: 1023px) {
   .container {
     max-width: 90%;
     margin: 20px auto;
     padding: 10px;
   }
+}
+
+/* Adjust layout for mobile (portrait) */
+@media (max-width: 767px) {
   .image-gallery {
-    grid-template-columns: repeat(3, 33.33%); /* adjust the width of the gallery for tablet devices */
-    height: 400px; /* adjust the height of the gallery for tablet devices */
+    grid-template-columns: repeat(1, 100%); /* adjust the width of the gallery for mobile devices */
+    height: 200px; /* adjust the height of the gallery for mobile devices */
   }
   .image-gallery a img {
-    width: 100%; /* adjust the width of the images for tablet devices */
-    height: 250px; /* adjust the height of the images for tablet devices */
+    width: 100%; /* adjust the width of the images for mobile devices */
+    height: 150px; /* adjust the height of the images for mobile devices */
   }
   .image-gallery img {
     width: 100%;
     height: auto;
   }
-  h1 {
-    font-size: 3em; /* adjust this value to your liking */
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.2; /* adjust this value to your liking */
+   h1 {
+   font-size: 2.5em; /* adjust this value to your liking */
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.2; /* adjust this value to your liking */
   }
-  footer {
+   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -116,30 +54,21 @@ body {
     padding: 10px;
     text-align: center;
   }
+  .container {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+  }
 }
 
-/* Tablet (landscape) */
-@media (min-width: 1024px) and (max-width: 1279px) {
+/* Adjust layout for mobile (landscape) */
+@media (max-width: 767px) and (orientation: landscape) {
+   h1 {
+   font-size: 10px; /* adjust this value to your liking */
+  }
   .container {
-    max-width: 80%;
-    margin: 30px auto;
-    padding: 15px;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 5px;
   }
-  .image-gallery {
-    grid-template-columns: repeat(4, 25%); /* adjust the width of the gallery for tablet landscape devices */
-    height: 500px; /* adjust the height of the gallery for tablet landscape devices */
-  }
-  .image-gallery a img {
-    width: 100%; /* adjust the width of the images for tablet landscape devices */
-    height: 300px; /* adjust the height of the images for tablet landscape devices */
-  }
-  .image-gallery img {
-    width: 100%;
-    height: auto;
-  }
-  h1 {
-    font-size: 3.5em; /* adjust this value to your liking */
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.2; /* adjust this value to your liking */
-   }
 }
