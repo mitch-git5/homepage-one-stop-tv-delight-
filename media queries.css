@@ -28,7 +28,7 @@ body {
 }
 
 /* Adjust layout for mobile (portrait) */
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .image-gallery {
     grid-template-columns: repeat(1, 100%); /* adjust the width of the gallery for mobile devices */
     height: 200px; /* adjust the height of the gallery for mobile devices */
