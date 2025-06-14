@@ -29,11 +29,26 @@
     <div id="largeContainer">
       <div class="infoContainer">
          <div id="searchContainer">
-           <input type="text" autocomplete="off" onfocus="this.value='';" onblur="if(this.value==''){this.value='Search...'};" onkeyup="searchOnPage(this.value.toLowerCase());" value="" name="search" id="search_box" />
-           <input type="submit" id="search_button" value="Search" />
-           <div id="search_result"></div>
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
            <!-- add home button -->
-            <a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index.html" id="home-button">Home Page</a>
+       <a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index.html" class="homepage-link">Home Button</a>
+         </div>
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
          </div>
         <div class="infoBackTitleContainer">
           <span class="infoBackTitle">Top 10 Picked</span>
@@ -770,6 +785,8 @@ He will wipe out the fraud that has swept the world, and deliver to the commoner
         <span class="title">Style:</span> 
       </div>
     </div>
+    <script src="lib/genre list.js"></script>
+    <script src="lib/date list.js"></script>
     <script type="text/javascript">
                       $(document).ready(function() {
                                 $(&quot;.fancybox&quot;).fancybox({
