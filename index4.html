@@ -22,6 +22,7 @@
                                 });
             
 </script>
+<link rel="stylesheet" href="lib/media queries movies.css">
   </head>
   <body>
     <div id="overlay"></div>
@@ -37,6 +38,7 @@
 	<!-- add home button -->
        <a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index.html" class="homepage-link">Home Button</a>
          </div>
+         <div class="dropdown-container">
          <div id="genre-select-container">
          <label for="genre-select" class="genre-label">Search By Genre:</label>
          <select id="genre-select">
@@ -49,6 +51,13 @@
              <option value="all">All</option>
            </select>
          </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        </div>
         <div class="infoContainerTextContainer">
           <div class="name">
             <span class="titleNoBlock">Total Movies:</span>
@@ -121,9 +130,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=ku8K3e05s1s"target="_blank">trailer link</a></span>
           </div>
-      <div class="anilink name">
+          <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">PG:14</span>
+            <span class="value">TV:14</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -180,9 +189,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=nxE0Xp0ARcM"target="_blank">trailer link</a></span>
           </div>
-        <div class="anilink name">
+            <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">PG-13</span>
+            <span class="value">TV:13</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -239,9 +248,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=FHgm89hKpXU"target="_blank">trailer link</a></span>
           </div>
-        <div class="anilink name">
+            <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">PG</span>
+            <span class="value">TV:PG</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -299,9 +308,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=t7jna8AulKA"target="_blank">trailer link</a></span>
           </div>
-        <div class="anilink name">
+            <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">PG</span>
+            <span class="value">TV:PG</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -358,7 +367,7 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=UC0cnDhB7MQ"target="_blank">trailer link</a></span>
           </div>
-        <div class="anilink name">
+            <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
             <span class="value">Unknown</span>
           </div>
@@ -417,7 +426,7 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=YYg3JtwP2NY"target="_blank">trailer link</a></span>
           </div>
-        <div class="anilink name">
+            <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
             <span class="value">Unknown</span>
           </div>
@@ -477,9 +486,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=SEqstQn0sag"target="_blank">trailer link</a></span>
           </div>
-         <div class="anilink name">
+             <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">Rated:G</span>
+            <span class="value">TV:G</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -536,9 +545,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=HJx0HNj_KMk"target="_blank">trailer link</a></span>
           </div>
-         <div class="anilink name">
+             <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">Rated:G</span>
+            <span class="value">TV:G</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -596,9 +605,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=hX-NHafvY5I"target="_blank">trailer link</a></span>
           </div>
-         <div class="anilink name">
+             <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">Rated:G</span>
+            <span class="value">TV:G</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -655,17 +664,15 @@
             <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=q2FCfgT-Fm8"target="_blank">trailer link</a></span>
           </div>
-      <div class="anilink name">
+          <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">PG-13</span>
+            <span class="value">TV:13</span>
           </div>
          </div>
         <div class="qBar"></div>
       </div>
 
 	  
-              <script src="lib/genre list.js"></script>
-              <script src="lib/date list.js"></script>
 	  <script type="text/javascript">
                       $(document).ready(function() {
                                 $(&quot;.fancybox&quot;).fancybox({
@@ -681,8 +688,9 @@
                 
 </script>
 <script src="lib/sortMovies.js"></script>
- <script src="lib/year and genre filter.js" defer></script>
+<script src="lib/filter dropdowns.js" defer></script>
        <!-- Add the no-results-message element -->
 <div id="no-results-message" style="display: none;"></div>
+<script src="lib/Iframe movies.js"></script>
   </body>
 </html>
