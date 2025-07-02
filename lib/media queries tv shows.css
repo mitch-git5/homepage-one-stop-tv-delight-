@@ -152,6 +152,24 @@
     float: right;
 }
 
+.youtube-player-wrapper {
+  position: relative; /* Keep relative if you need to position other things inside */
+  aspect-ratio: 16 / 9; 
+  width: 100%; /* Ensure it takes up available width */
+  padding-top: 0;
+  max-width: none; /* Remove if you want it limited */
+  margin: 0; /* Remove if you want it centered */
+  box-sizing: content-box; /* Ensure padding is added to the dimensions if present */
+}
+
+.youtube-player-wrapper iframe {
+  position: absolute; top: 0; left: 0 
+  left: auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box; /* Ensure padding is added to the dimensions if present */
+}
+
 }
 
 /* Media query for Mobile devices (phones) */
@@ -299,6 +317,24 @@
     right: 250px;
     bottom: 40px;
     float: right;
+}
+
+.youtube-player-wrapper {
+  position: relative; /* Keep relative if you need to position other things inside */
+  aspect-ratio: 16 / 9; 
+  width: 100%; /* Ensure it takes up available width */
+  padding-top: 0;
+  max-width: none; /* Remove if you want it limited */
+  margin: 0; /* Remove if you want it centered */
+  box-sizing: content-box; /* Ensure padding is added to the dimensions if present */
+}
+
+.youtube-player-wrapper iframe {
+  position: absolute; top: 0; left: 0 
+  left: auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box; /* Ensure padding is added to the dimensions if present */
 }
 
 }

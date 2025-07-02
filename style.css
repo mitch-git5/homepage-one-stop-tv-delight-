@@ -863,8 +863,8 @@ a:hover {
     text-align: center;
 }
 
-
 <style>
+
 a:link {
   color: darkgreen;
   background-color: transparent;
@@ -888,68 +888,43 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 </style>
 
-#home-button {
+.homepage-link-container {
   position: absolute;
   right: 5px;
   top: 5px;
-  background-color: #4CAF50; /* green background */
-  border: 2px solid #3e8e41; /* green border */
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px 15px; /* increased padding to make button larger */
-  color: #0f0a53e0; /* white text color */
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-decoration: underline !important;
-  }
-  cursor: pointer; /* add pointer cursor on hover */
 }
 
-#home-button:hover {
-  background-color: #3e8e41; /* darker green on hover */
+.homepage-link {
+  background-color: #ffffff; /*  white  background */
+  color: #08630c; /* green text */
+  padding: 10px 20px;
+  border: 3px solid #000200; /* add a small border */
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px; /* increase text size */
 }
 
-#home-button {
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-decoration: underline !important;
-  color: #32CD32 !important; /* change the color to green */
+.homepage-link:hover {
+  background-color: #0967be; /* light blue on hover */
 }
 
-#home-button a {
+.homepage-link-container .homepage-link {
   font-size: 20px !important;
   font-weight: bold !important;
   text-decoration: underline !important;
   color: #32CD32 !important; /* change the color to green */
 }
 
-#home-button:hover, #home-button:active {
-    color: #FF3737 !important; /* change the color to highlight red on hover and active */
-  }
-  
-  #home-button a:hover, #home-button a:active {
-    color: #FF3737 !important; /* change the color to highlight red on hover and active */
-  }
+.homepage-link-container .homepage-link:hover, .homepage-link-container .homepage-link:active {
+  color: #FF3737 !important; /* change the color to highlight red on hover and active */
+}
 
-  a {
+ a {
     color: green;
-  }
-
-  .homepage-link {
-    background-color: #ffffff; /*  white  background */
-    color: #08630c; /* green text */
-    padding: 10px 20px;
-    border: 3px solid #000200; /* add a small border */
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 18px; /* increase text size */
-  }
-  
-  .homepage-link:hover {
-    background-color: #0967be; /* light blue on hover */
   }
 
   .no-results-message {
@@ -1141,6 +1116,7 @@ a:active {
           /* height: 282px; */
           /* Consider box-sizing here too */
           /* box-sizing: border-box; */
+          aspect-ratio: 16 / 9;
         }
 
         iframe#widget2 {
@@ -1167,3 +1143,11 @@ a:active {
         color: #ee1818; /* red color */
         font-size: 18px; /* larger font size */
        }
+
+    .homepage-link-container {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* add other styles to match the current layout */
+}
